@@ -15,7 +15,7 @@ public class UriMatcher {
             case "api/feedback":
                 return new FeedbackService();
             default:
-                throw new RuntimeException("Not implemented : " + uri);
+                throw new NotImplementedException();
         }
     }
 }
